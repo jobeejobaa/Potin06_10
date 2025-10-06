@@ -23,15 +23,6 @@ Things you may want to cover:
 
 * ...
 
-#{rand(1000..2000)}#{rand(65..70).chr}
 
 
 
-PrivateMessage.destroy_all
-puts " Creating private messages..."
-20.times do
-  PrivateMessage.create!(
-    content: Faker::Lorem,
-    user_id: rand((User.all.first.id)..(User.all.last.id))
-  )
-end

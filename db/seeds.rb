@@ -33,7 +33,7 @@ puts " 👥 Creating users..."
   User.create!(
     first_name: Faker::Name.first_name,
     last_name:  Faker::Name.last_name,
-    description: Faker::Lorem,
+    description: Faker::Fantasy::Tolkien.poem,
     email: "#{(Faker.name).split.join}@gmail.com",
     age: rand(12..30),
     city_id: rand((City.all.first.id)..(City.all.last.id))
@@ -43,8 +43,8 @@ end
 puts " 📰 Creating gossips..."
 20.times do
   Gossip.create!(
-    title: Faker::Book.name,
-    content: Faker::Lorem,
+    title: Faker::Book.title,
+    content: Faker::Fantasy::Tolkien.poem,
     user_id: rand((User.all.first.id)..(User.all.last.id))
   )
 end
@@ -52,14 +52,14 @@ end
 puts " 🔗 Creating tags..."
 10.times do
   Tag.create!(
-    title: Faker::Lorem
+    title: Faker::Fantasy::Tolkien.race
   )
 end
 
 puts " ⛓️  Creating comments..."
 20.times do
   Comment.create!(
-    content: Faker::Lorem,
+    content: Faker::Fantasy::Tolkien.poem,
     user_id: rand((User.all.first.id)..(User.all.last.id)),
     gossip_id: rand((Gossip.all.first.id)..(Gossip.all.last.id))
   )
