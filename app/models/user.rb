@@ -4,5 +4,5 @@ class User < ApplicationRecord
   has_many :private_message
   has_many :comments
   has_many :comments_comments
-  has_many :like
+  has_many :likes
 end
