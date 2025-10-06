@@ -10,7 +10,7 @@
 
 require "faker"
 
-puts " Cleaning DB..."
+puts " 🧹 Cleaning DB..."
 
 GossipTag.destroy_all
 Like.destroy_all
@@ -20,15 +20,15 @@ Gossip.destroy_all
 User.destroy_all
 City.destroy_all
 
-puts " Creating cities..."
+puts " 🧱 Creating cities..."
 10.times do
   City.create!(
     city_name: Faker::Address.city,
-    zip_code: "59800"
+    zip_code: "#{rand(1000..2000)}#{rand(65..70).chr}"
   )
 end
 
-puts " Creating Users..."
+puts " 👥 Creating users..."
 10.times do
   User.create!(
     first_name: Faker::Name.first_name,
@@ -40,23 +40,23 @@ puts " Creating Users..."
   )
 end
 
-puts " Creating gossips..."
+puts " 📰 Creating gossips..."
 20.times do
   Gossip.create!(
-    title: "Titre",
+    title: Faker::Book.name,
     content: Faker::Lorem,
     user_id: rand((User.all.first.id)..(User.all.last.id))
   )
 end
 
-puts " Creating tags..."
+puts " 🔗 Creating tags..."
 10.times do
   Tag.create!(
     title: Faker::Lorem
   )
 end
 
-puts " Creating comments..."
+puts " ⛓️  Creating comments..."
 20.times do
   Comment.create!(
     content: Faker::Lorem,
@@ -65,7 +65,7 @@ puts " Creating comments..."
   )
 end
 
-puts " Creating likes..."
+puts " 🫀  Creating likes..."
 20.times do
   Like.create!(
     user_id: rand((User.all.first.id)..(User.all.last.id)),
@@ -73,7 +73,7 @@ puts " Creating likes..."
   )
 end
 
-puts " Creating gossip & tag"
+puts " ✍️  Creating gossips & tags..."
 10.times do 
   GossipTag.create!(
     gossip_id: rand((Gossip.all.first.id)..(Gossip.all.last.id)),
@@ -81,6 +81,6 @@ puts " Creating gossip & tag"
   )
 end
 
-puts "✅ Done!"
+puts " ✅ Done !"
 puts "Users: #{User.count} | Cities: #{City.count} | Gossips: #{Gossip.count} | Tags: #{Tag.count} | Comments: #{Comment.count} | Likes: #{Like.count} | Gossips & Tags: #{GossipTag.count}"
 
