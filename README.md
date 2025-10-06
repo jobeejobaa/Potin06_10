@@ -55,6 +55,7 @@ This application currently uses the following services:
 - **Job Queues:** Active Job (If applicable, otherwise mention if there are no job queues)
 - **Cache Servers:** (Mention any caching mechanisms if implemented)
 - **Search Engines:** (Mention if there is a search feature)
+<<<<<<< HEAD
 
 ## Deployment Instructions
 To deploy this application, follow these steps:
@@ -77,7 +78,28 @@ This application is an ongoing project that will progressively incorporate more 
 ```
 
 Feel free to modify the Ruby and Rails version placeholders with the correct versions and add any additional information that may be specific to your setup or preferences!
+=======
+>>>>>>> refs/remotes/origin/main
 
+## Deployment Instructions
+To deploy this application, follow these steps:
 
+1. Configure your deployment environment (e.g., Heroku, AWS, etc.)
+2. Set up your environment variables and database settings.
+3. Push your code to the remote repository.
+4. Deploy your application using the respective commands for your hosting service, such as:
+   ```bash
+   git push heroku main
+   ```
 
+Ensure that you run:
+```bash
+rails db:migrate RAILS_ENV=production
+```
+
+## Conclusion
+This application is an ongoing project that will progressively incorporate more features such as user management, comment functionality, and enhanced user interface components. Stay tuned for further improvements!
+```
+
+Feel free to modify the Ruby and Rails version placeholders with the correct versions and add any additional information that may be specific to your setup or preferences!
 
