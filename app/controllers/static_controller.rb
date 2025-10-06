@@ -10,4 +10,8 @@ class StaticController < ApplicationController
 
   def gossip
   end
+
+  def profil
+  end
+
 end

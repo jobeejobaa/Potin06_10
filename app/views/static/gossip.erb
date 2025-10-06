@@ -18,10 +18,9 @@
         <nav>
             <div>
                 <a href="/welcome">Accueil</a>
-                <div>
-                    <a class="nav-link" href="/team">Team</a>
-                    <a class="nav-link" href="/contact">Contact</a>
-                </div>
+                <a class="nav-link" href="/team">Team</a>
+                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/profil">Profil Utilisateur</a>
             </div>
         </nav>
     </header>
@@ -30,7 +29,7 @@
         <h1>Bienvenue sur la page gossip !</h1>
         <%= Gossip.find(params['id']).user.first_name%><br>
         <%= Gossip.find(params['id']).user.last_name%><br>
-        <%= Gossip.find(params['id']).content%>
+        <%= Gossip.find(params['id']).content%><br>
     </main>
 
 <!-- Script Bootstrap JS -->

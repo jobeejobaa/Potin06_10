@@ -13,15 +13,14 @@
     crossorigin="anonymous">
 </head>
 
-<body>
+<body class= "text-center">
     <header>
         <nav>
             <div>
-                <a href="/welcome">Accueil</a>
-                <div>
-                    <a class="nav-link" href="/team">Team</a>
-                    <a class="nav-link" href="/contact">Contact</a>
-                </div>
+                <a class="nav-link" href="/welcome">Accueil</a>
+                <a class="nav-link" href="/team">Team</a>
+                <a class="nav-link" href="/contact">Contact</a>
+                <a class="nav-link" href="/profil">Profil Utilisateur</a>
             </div>
         </nav>
     </header>
@@ -29,14 +28,14 @@
     <main>
         <h1>Bienvenue sur Gossip THP !</h1>
         <h2>Découvre ici toute la liste des potins déjà rédigés !</h2>
-        <%for n in Gossip.all do %>
-            <h2><%= n.title%></h2>
-            <%= "#{n.user.first_name} #{n.user.last_name}" %>
-            <br>
-            <%= n.content%>
-            <br>
-            <a href="/gossip/<%= n.id %>">Voir ce Gossip</a>
-        <%end%>
+        <div>
+            <%for n in Gossip.all do %>
+                <h2><%= n.title%></h2>
+                <%= "#{n.user.first_name} #{n.user.last_name}" %><br>
+                <%= n.content%><br>
+                <a href="/gossip/<%= n.id %>">Voir ce Gossip</a>
+            <%end%>
+        </div>
     </main>
 
 <!-- Script Bootstrap JS -->
