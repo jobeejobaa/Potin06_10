@@ -36,9 +36,21 @@ puts " 👥 Creating users..."
     description: Faker::Fantasy::Tolkien.poem,
     email: "#{(Faker.name).split.join}@gmail.com",
     age: rand(12..30),
-    city_id: rand((City.all.first.id)..(City.all.last.id))
+    city_id: rand((City.all.first.id)..(City.all.last.id)),
+    active_user: false
   )
 end
+
+puts " 🕺 Creating active users..."
+User.create!(
+    first_name: Faker::Name.first_name,
+    last_name:  Faker::Name.last_name,
+    description: Faker::Fantasy::Tolkien.poem,
+    email: "#{(Faker.name).split.join}@gmail.com",
+    age: rand(12..30),
+    city_id: rand((City.all.first.id)..(City.all.last.id)),
+    active_user: true
+  )
 
 puts " 📰 Creating gossips..."
 20.times do

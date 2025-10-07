@@ -8,9 +8,18 @@
         <main>
             <form action= <%= gossips_path %> method="POST">
                 <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
+                <p>Entre ton titre de potin ci-dessous :</p>
                 <input type="text" name="gossip_text">
+                <br>
+                <br>
+                <form action= <%= gossips_path %> method="POST">
+                <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
+                <p>Entre ton potin ci-dessous :</p>
+                <input type="text" name="gossip_text">
+                </form>
+                <br>
+                <br>
                 <input type="submit" value="Valider">
-            </form>
         </main>
     </body>
 </html>

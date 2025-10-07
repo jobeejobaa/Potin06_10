@@ -8286,3 +8286,1318 @@ app/views/users/show.html.erb:15
 Information for cause: NoMethodError (undefined method 'first_name' for nil):
   
 app/views/users/show.html.erb:15
+  [1m[36mCACHE ActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT * FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = 'environment' ORDER BY "ar_internal_metadata"."key" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PotinMaster'*/[0m
+Migrating to AddColumToUser (20251007160546)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" ADD "active_user" boolean DEFAULT 0 /*application='PotinMaster'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.0ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ('20251007160546') RETURNING "version" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PotinMaster'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PotinMaster'*/[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Load (0.1ms)[0m  [1m[34mSELECT "gossip_tags".* FROM "gossip_tags" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.7ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 21 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.9ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 22 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.5ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 23 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.9ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 24 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 25 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 26 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 27 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 28 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.5ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 29 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Destroy (0.6ms)[0m  [1m[31mDELETE FROM "gossip_tags" WHERE "gossip_tags"."id" = 30 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Load (0.1ms)[0m  [1m[34mSELECT "likes".* FROM "likes" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 41 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 42 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 43 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 44 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 45 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 46 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 47 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 48 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 49 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 50 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 51 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 52 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 53 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 54 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 55 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 56 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 57 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.5ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 58 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.4ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 59 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mLike Destroy (0.6ms)[0m  [1m[31mDELETE FROM "likes" WHERE "likes"."id" = 60 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.5ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 41 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 42 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 43 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 44 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 45 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 46 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 47 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 48 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 49 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 50 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 51 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 52 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 53 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 54 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 55 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 56 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 57 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 58 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 59 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mComment Destroy (0.4ms)[0m  [1m[31mDELETE FROM "comments" WHERE "comments"."id" = 60 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.5ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 21 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 22 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 23 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 24 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 25 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 26 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (1.3ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 27 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 28 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (0.4ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 29 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Destroy (1.2ms)[0m  [1m[31mDELETE FROM "tags" WHERE "tags"."id" = 30 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.5ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 41 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 42 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (1.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 43 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 44 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 45 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.5ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 46 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 47 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 48 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 49 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 50 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 51 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.5ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 52 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (1.2ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 53 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 54 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 55 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (1.1ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 56 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 57 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 58 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (1.0ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 59 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Destroy (0.4ms)[0m  [1m[31mDELETE FROM "gossips" WHERE "gossips"."id" = 60 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 21 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 22 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 23 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 24 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 25 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 26 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 27 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 28 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (0.7ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 29 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Destroy (1.2ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = 30 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (1.2ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 21 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (1.1ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 22 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (1.1ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 23 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (0.9ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 24 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (1.2ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 25 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (1.1ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 26 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (0.8ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 27 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (1.0ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 28 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (0.7ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 29 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Destroy (0.5ms)[0m  [1m[31mDELETE FROM "cities" WHERE "cities"."id" = 30 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.8ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('North Maryetta', '1792E', '2025-10-07 16:11:41.618510', '2025-10-07 16:11:41.618510') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Labadietown', '1020C', '2025-10-07 16:11:41.620968', '2025-10-07 16:11:41.620968') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.7ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Haleytown', '1863E', '2025-10-07 16:11:41.622596', '2025-10-07 16:11:41.622596') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Langoshchester', '1958E', '2025-10-07 16:11:41.624207', '2025-10-07 16:11:41.624207') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Port Lang', '1399A', '2025-10-07 16:11:41.625606', '2025-10-07 16:11:41.625606') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Port Jodi', '1757C', '2025-10-07 16:11:41.627065', '2025-10-07 16:11:41.627065') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.6ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Lake Jackiehaven', '1354D', '2025-10-07 16:11:41.628532', '2025-10-07 16:11:41.628532') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Lake Jenetteton', '1294D', '2025-10-07 16:11:41.630577', '2025-10-07 16:11:41.630577') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.6ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Lake Carline', '1056D', '2025-10-07 16:11:41.632136', '2025-10-07 16:11:41.632136') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.3ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Create (0.5ms)[0m  [1m[32mINSERT INTO "cities" ("city_name", "zip_code", "created_at", "updated_at") VALUES ('Torpmouth', '1007E', '2025-10-07 16:11:41.633842', '2025-10-07 16:11:41.633842') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Lamont', 'Quitzon', 'Long live the Halflings! Praise them with great praise!', 'Faker@gmail.com', 29, '2025-10-07 16:11:41.640933', '2025-10-07 16:11:41.640933', 35, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Liliana', 'Moore', 'A Rhyme of Lore', 'Faker@gmail.com', 21, '2025-10-07 16:11:41.646320', '2025-10-07 16:11:41.646320', 38, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Billy', 'Bogisich', 'A Walking Song', 'Faker@gmail.com', 18, '2025-10-07 16:11:41.651154', '2025-10-07 16:11:41.651154', 33, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Alonzo', 'Little', 'Wake Now My Merry Lads! Wake and Hear Me Calling!', 'Faker@gmail.com', 27, '2025-10-07 16:11:41.655670', '2025-10-07 16:11:41.655670', 36, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Madison', 'Goyette', 'Hey! Now! Come Hoy Now! Whither Do You Wander?', 'Faker@gmail.com', 21, '2025-10-07 16:11:41.660760', '2025-10-07 16:11:41.660760', 31, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.7ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 34 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Oren', 'Kunze', 'Long live the Halflings! Praise them with great praise!', 'Faker@gmail.com', 26, '2025-10-07 16:11:41.664959', '2025-10-07 16:11:41.664959', 34, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Eleni', 'Friesen', 'The Stone Troll', 'Faker@gmail.com', 20, '2025-10-07 16:11:41.669178', '2025-10-07 16:11:41.669178', 31, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.2ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Elinor', 'Hartmann', 'Arise now, arise, Riders of Theoden!', 'Faker@gmail.com', 14, '2025-10-07 16:11:41.672844', '2025-10-07 16:11:41.672844', 36, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Marylouise', 'Abshire', 'An Elven-maid there was of old', 'Faker@gmail.com', 19, '2025-10-07 16:11:41.676810', '2025-10-07 16:11:41.676810', 31, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.5ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.0ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Bryant', 'Fahey', 'Song of the Mounds of Mundburg', 'Faker@gmail.com', 12, '2025-10-07 16:11:41.679902', '2025-10-07 16:11:41.679902', 35, 0) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" ORDER BY "cities"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mCity Load (0.6ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Create (0.1ms)[0m  [1m[32mINSERT INTO "users" ("first_name", "last_name", "description", "email", "age", "created_at", "updated_at", "city_id", "active_user") VALUES ('Lahoma', 'Brekke', 'A Elbereth Gilthoniel', 'Faker@gmail.com', 16, '2025-10-07 16:11:41.683149', '2025-10-07 16:11:41.683149', 38, 1) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('The Widening Gyre', 'Fifteen birds in five fir trees', '2025-10-07 16:11:41.687293', '2025-10-07 16:11:41.687293', 39) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Those Barren Leaves, Thrones, Dominations', 'Through Rohan Over Fen and Field Where the Long Grass Grows', '2025-10-07 16:11:41.692890', '2025-10-07 16:11:41.692890', 31) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Postern of Fate', 'Ere iron was found or tree was hewn', '2025-10-07 16:11:41.696089', '2025-10-07 16:11:41.696089', 38) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('The House of Mirth', 'The Bath Song', '2025-10-07 16:11:41.698936', '2025-10-07 16:11:41.698936', 38) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('If Not Now, When?', 'When the black breath blows', '2025-10-07 16:11:41.702263', '2025-10-07 16:11:41.702263', 32) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('The Torment of Others', 'From dark Dunharrow in the dim morning', '2025-10-07 16:11:41.705093', '2025-10-07 16:11:41.705093', 36) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('A Glass of Blessings', 'The Man in the Moon Stayed Up Too Late', '2025-10-07 16:11:41.708079', '2025-10-07 16:11:41.708079', 35) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('A Many-Splendoured Thing', 'Cold Be Hand and Heart and Bone', '2025-10-07 16:11:41.710952', '2025-10-07 16:11:41.710952', 31) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('A Farewell to Arms', 'Where now are the Dunedain, Elessar, Elessar?', '2025-10-07 16:11:41.713774', '2025-10-07 16:11:41.713774', 39) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Nine Coaches Waiting', 'Wake Now My Merry Lads! Wake and Hear Me Calling!', '2025-10-07 16:11:41.716530', '2025-10-07 16:11:41.716530', 39) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Such, Such Were the Joys', 'Ho! Tom Bombadil, Tom Bombadillo!', '2025-10-07 16:11:41.719361', '2025-10-07 16:11:41.719361', 37) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Shall not Perish', 'Sing now, ye people of the Tower of Anor', '2025-10-07 16:11:41.722294', '2025-10-07 16:11:41.722294', 39) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('A Time of Gifts', 'Song of the Mounds of Mundburg', '2025-10-07 16:11:41.725767', '2025-10-07 16:11:41.725767', 31) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Frequent Hearses', 'Ere iron was found or tree was hewn', '2025-10-07 16:11:41.728740', '2025-10-07 16:11:41.728740', 32) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('That Hideous Strength', 'An Elven-maid there was of old', '2025-10-07 16:11:41.731551', '2025-10-07 16:11:41.731551', 39) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.1ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('The Monkey''s Raincoat', 'Song of Beren and Lúthien', '2025-10-07 16:11:41.734383', '2025-10-07 16:11:41.734383', 33) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('It''s a Battlefield', 'Ere iron was found or tree was hewn', '2025-10-07 16:11:41.738177', '2025-10-07 16:11:41.738177', 40) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Little Hands Clapping', 'O Orofarne Lassemista, Carnimirie!', '2025-10-07 16:11:41.741731', '2025-10-07 16:11:41.741731', 33) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('Ah, Wilderness!', 'The Bath Song', '2025-10-07 16:11:41.744762', '2025-10-07 16:11:41.744762', 33) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Create (0.0ms)[0m  [1m[32mINSERT INTO "gossips" ("title", "content", "created_at", "updated_at", "user_id") VALUES ('The Cricket on the Hearth', 'Ho! Tom Bombadil, Tom Bombadillo!', '2025-10-07 16:11:41.747641', '2025-10-07 16:11:41.747641', 33) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Barrow-wights', '2025-10-07 16:11:41.748602', '2025-10-07 16:11:41.748602') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Vampire', '2025-10-07 16:11:41.749980', '2025-10-07 16:11:41.749980') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Mens', '2025-10-07 16:11:41.751469', '2025-10-07 16:11:41.751469') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.6ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Trolls', '2025-10-07 16:11:41.752973', '2025-10-07 16:11:41.752973') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.6ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Kaukareldar', '2025-10-07 16:11:41.754553', '2025-10-07 16:11:41.754553') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.7ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Balrogs', '2025-10-07 16:11:41.756091', '2025-10-07 16:11:41.756091') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.6ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Oarni', '2025-10-07 16:11:41.757764', '2025-10-07 16:11:41.757764') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Half-orc', '2025-10-07 16:11:41.759811', '2025-10-07 16:11:41.759811') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Elves', '2025-10-07 16:11:41.761300', '2025-10-07 16:11:41.761300') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mTag Create (0.5ms)[0m  [1m[32mINSERT INTO "tags" ("title", "created_at", "updated_at") VALUES ('Maiar', '2025-10-07 16:11:41.762659', '2025-10-07 16:11:41.762659') RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 67 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('O! What are you doing?', '2025-10-07 16:11:41.768119', '2025-10-07 16:11:41.768119', 39, 67) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 62 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Hey dol! merry dol! ring a dong dillo!', '2025-10-07 16:11:41.780733', '2025-10-07 16:11:41.780733', 34, 62) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 72 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('The cold hard lands', '2025-10-07 16:11:41.787514', '2025-10-07 16:11:41.787514', 31, 72) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (1.9ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 73 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Arise now, arise, Riders of Theoden!', '2025-10-07 16:11:41.793527', '2025-10-07 16:11:41.793527', 34, 73) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 75 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Ai! laurië lantar lassi súrinen (Namárië)', '2025-10-07 16:11:41.799128', '2025-10-07 16:11:41.799128', 40, 75) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 80 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Get Out! You old Wight! Vanish in the Sunlight!', '2025-10-07 16:11:41.804761', '2025-10-07 16:11:41.804761', 38, 80) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 66 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Arise now, arise, Riders of Theoden!', '2025-10-07 16:11:41.810930', '2025-10-07 16:11:41.810930', 39, 66) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (1.4ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 70 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Arise now, arise, Riders of Theoden!', '2025-10-07 16:11:41.816181', '2025-10-07 16:11:41.816181', 37, 70) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 79 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Sing all ye joyful!', '2025-10-07 16:11:41.821998', '2025-10-07 16:11:41.821998', 37, 79) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 69 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Out of doubt, out of dark, to the day’s rising', '2025-10-07 16:11:41.827776', '2025-10-07 16:11:41.827776', 40, 69) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 61 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Wake Now My Merry Lads! Wake and Hear Me Calling!', '2025-10-07 16:11:41.833901', '2025-10-07 16:11:41.833901', 33, 61) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 76 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('When Spring unfolds the beechen leaf, and sap is in the bough', '2025-10-07 16:11:41.839063', '2025-10-07 16:11:41.839063', 33, 76) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 72 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Wake Now My Merry Lads! Wake and Hear Me Calling!', '2025-10-07 16:11:41.844209', '2025-10-07 16:11:41.844209', 35, 72) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.6ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 69 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Sing all ye joyful!', '2025-10-07 16:11:41.849222', '2025-10-07 16:11:41.849222', 36, 69) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 65 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.1ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Silver flow the streams from Celos to Erui', '2025-10-07 16:11:41.854740', '2025-10-07 16:11:41.854740', 34, 65) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 77 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('The Man in the Moon Stayed Up Too Late', '2025-10-07 16:11:41.860841', '2025-10-07 16:11:41.860841', 33, 77) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (1.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 69 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Hop along, my little friends, up the Withywindle!', '2025-10-07 16:11:41.865929', '2025-10-07 16:11:41.865929', 36, 69) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.8ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 71 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Sing all ye joyful!', '2025-10-07 16:11:41.872156', '2025-10-07 16:11:41.872156', 37, 71) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 80 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.0ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('Song of Beren and Lúthien', '2025-10-07 16:11:41.877644', '2025-10-07 16:11:41.877644', 38, 80) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.5ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" WHERE "gossips"."id" = 69 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mComment Create (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("content", "created_at", "updated_at", "user_id", "gossip_id") VALUES ('O! Wanderers in the Shadowed Land', '2025-10-07 16:11:41.884412', '2025-10-07 16:11:41.884412', 40, 69) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.891838', '2025-10-07 16:11:41.891838', 78, 38) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.900407', '2025-10-07 16:11:41.900407', 68, 40) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.906413', '2025-10-07 16:11:41.906413', 77, 31) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.3ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.913311', '2025-10-07 16:11:41.913311', 66, 37) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.922774', '2025-10-07 16:11:41.922774', 63, 35) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.932149', '2025-10-07 16:11:41.932149', 72, 35) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (1.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.939800', '2025-10-07 16:11:41.939800', 65, 40) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.944428', '2025-10-07 16:11:41.944428', 62, 39) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.948663', '2025-10-07 16:11:41.948663', 75, 41) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.953044', '2025-10-07 16:11:41.953044', 76, 41) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.958178', '2025-10-07 16:11:41.958178', 69, 33) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.963146', '2025-10-07 16:11:41.963146', 76, 36) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.968153', '2025-10-07 16:11:41.968153', 78, 36) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.972788', '2025-10-07 16:11:41.972788', 73, 35) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.978420', '2025-10-07 16:11:41.978420', 62, 38) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.982904', '2025-10-07 16:11:41.982904', 66, 34) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.987574', '2025-10-07 16:11:41.987574', 67, 35) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.1ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.992523', '2025-10-07 16:11:41.992523', 63, 36) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.1ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:41.998617', '2025-10-07 16:11:41.998617', 73, 31) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mLike Create (0.0ms)[0m  [1m[32mINSERT INTO "likes" ("created_at", "updated_at", "gossip_id", "user_id") VALUES ('2025-10-07 16:11:42.003464', '2025-10-07 16:11:42.003464', 69, 34) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.6ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.007320', '2025-10-07 16:11:42.007320', 38, 73) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.6ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.011454', '2025-10-07 16:11:42.011454', 40, 62) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (1.1ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.015417', '2025-10-07 16:11:42.015417', 32, 72) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.5ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.019374', '2025-10-07 16:11:42.019374', 31, 80) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.8ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.022937', '2025-10-07 16:11:42.022937', 35, 69) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.5ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.026911', '2025-10-07 16:11:42.026911', 34, 70) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.5ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.030130', '2025-10-07 16:11:42.030130', 35, 70) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.6ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.033570', '2025-10-07 16:11:42.033570', 38, 63) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.5ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.037022', '2025-10-07 16:11:42.037022', 31, 77) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mGossip Load (0.0ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" ORDER BY "gossips"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" ASC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" ORDER BY "tags"."id" DESC LIMIT 1 /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN immediate TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Create (0.7ms)[0m  [1m[32mINSERT INTO "gossip_tags" ("created_at", "updated_at", "tag_id", "gossip_id") VALUES ('2025-10-07 16:11:42.039950', '2025-10-07 16:11:42.039950', 35, 76) RETURNING "id" /*application='PotinMaster'*/[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mCOMMIT TRANSACTION /*application='PotinMaster'*/[0m
+  [1m[36mUser Count (1.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "users" /*application='PotinMaster'*/[0m
+  [1m[36mCity Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "cities" /*application='PotinMaster'*/[0m
+  [1m[36mGossip Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "gossips" /*application='PotinMaster'*/[0m
+  [1m[36mTag Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "tags" /*application='PotinMaster'*/[0m
+  [1m[36mComment Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "comments" /*application='PotinMaster'*/[0m
+  [1m[36mLike Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "likes" /*application='PotinMaster'*/[0m
+  [1m[36mGossipTag Count (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "gossip_tags" /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (5.5ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for pp */ LIMIT 11 /*application='PotinMaster'*/[0m
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" /*application='PotinMaster'*/[0m
+Started GET "/" for 127.0.0.1 at 2025-10-07 18:14:03 +0200
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC /*application='PotinMaster'*/[0m
+Processing by StaticController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/index.erb within layouts/application
+  [1m[36mGossip Load (0.7ms)[0m  [1m[34mSELECT "gossips".* FROM "gossips" /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:13
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mUser Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1[0m
+  ↳ app/views/static/index.erb:15
+  Rendered static/index.erb within layouts/application (Duration: 48.1ms | GC: 15.5ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='index',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 62.5ms | GC: 16.5ms)
+Completed 200 OK in 267ms (Views: 62.7ms | ActiveRecord: 2.0ms (22 queries, 11 cached) | GC: 41.4ms)
+
+
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:14:04 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 5.6ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 7.5ms | ActiveRecord: 0.5ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:14:04 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 1.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:14:05 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.1ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 1.3ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | GC: 0.0ms)
+Completed 200 OK in 33ms (Views: 3.0ms | ActiveRecord: 0.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2025-10-07 18:14:35 +0200
+Processing by StaticController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/contact.erb within layouts/application
+  Rendered static/contact.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='contact',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 5.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:14:36 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 1.8ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:16:54 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 6.8ms | GC: 0.0ms)
+Completed 200 OK in 37ms (Views: 7.3ms | ActiveRecord: 1.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2025-10-07 18:16:54 +0200
+Processing by StaticController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/team.erb within layouts/application
+  Rendered static/team.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='team',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 2.6ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 2.9ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2025-10-07 18:16:54 +0200
+Processing by StaticController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/contact.erb within layouts/application
+  Rendered static/contact.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='contact',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 30ms (Views: 1.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:16:56 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 6.4ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 7.6ms | GC: 0.0ms)
+Completed 200 OK in 38ms (Views: 7.0ms | ActiveRecord: 1.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:17:10 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.7ms | GC: 0.0ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 6.3ms | GC: 0.0ms)
+Completed 200 OK in 36ms (Views: 6.9ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 0.0ms)
+
+
+Started POST "/gossips" for 127.0.0.1 at 2025-10-07 18:17:40 +0200
+Processing by GossipsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token" => "[FILTERED]", "gossip_text" => ""}
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+  
+NameError (undefined local variable or method 'anonymous_user' for an instance of GossipsController):
+  
+app/controllers/gossips_controller.rb:22:in 'GossipsController#create'
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:17:51 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 7.6ms | GC: 2.7ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 9.9ms | GC: 3.5ms)
+Completed 200 OK in 42ms (Views: 10.0ms | ActiveRecord: 0.6ms (3 queries, 0 cached) | GC: 4.2ms)
+
+
+Started GET "/contact" for 127.0.0.1 at 2025-10-07 18:17:52 +0200
+Processing by StaticController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/contact.erb within layouts/application
+  Rendered static/contact.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='contact',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.7ms)
+Completed 200 OK in 31ms (Views: 2.4ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 1.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:17:52 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | GC: 1.0ms)
+Completed 200 OK in 32ms (Views: 2.5ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 1.7ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:17:53 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.2ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 2.2ms | GC: 0.7ms)
+Completed 200 OK in 32ms (Views: 2.7ms | ActiveRecord: 0.1ms (1 query, 0 cached) | GC: 1.1ms)
+
+
+Started GET "/team" for 127.0.0.1 at 2025-10-07 18:20:07 +0200
+Processing by StaticController#team as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static/team.erb within layouts/application
+  Rendered static/team.erb within layouts/application (Duration: 0.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='team',application='PotinMaster',controller='static'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 16.1ms | GC: 2.4ms)
+Completed 200 OK in 45ms (Views: 15.4ms | ActiveRecord: 1.8ms (1 query, 0 cached) | GC: 2.4ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:20:09 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.5ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 1.4ms | GC: 0.0ms)
+Completed 200 OK in 40ms (Views: 1.9ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 1.8ms)
+
+
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:21:00 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 19.0ms | GC: 1.8ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | GC: 2.4ms)
+Completed 200 OK in 52ms (Views: 23.0ms | ActiveRecord: 2.0ms (3 queries, 0 cached) | GC: 3.2ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:21:01 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 2.0ms | GC: 0.0ms)
+Completed 200 OK in 41ms (Views: 2.4ms | ActiveRecord: 0.3ms (1 query, 0 cached) | GC: 0.3ms)
+
+
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:21:02 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.0ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 1.2ms | GC: 0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | GC: 0.0ms)
+Completed 200 OK in 31ms (Views: 2.4ms | ActiveRecord: 0.2ms (3 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/gossips/new" for 127.0.0.1 at 2025-10-07 18:30:05 +0200
+Processing by GossipsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering gossips/new.html.erb within layouts/application
+  Rendered gossips/new.html.erb within layouts/application (Duration: 0.8ms | GC: 0.0ms)
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='new',application='PotinMaster',controller='gossips'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | GC: 2.7ms)
+Completed 200 OK in 45ms (Views: 13.4ms | ActiveRecord: 1.3ms (1 query, 0 cached) | GC: 3.8ms)
+
+
+Started GET "/users/41" for 127.0.0.1 at 2025-10-07 18:30:07 +0200
+Processing by UsersController#show as HTML
+  Parameters: {"id" => "41"}
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:11
+  [1m[36mCity Load (0.2ms)[0m  [1m[34mSELECT "cities".* FROM "cities" WHERE "cities"."id" = 38 LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/users/show.html.erb:17
+  Rendered users/show.html.erb within layouts/application (Duration: 4.7ms | GC: 0.6ms)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."active_user" = 1 ORDER BY "users"."id" ASC LIMIT 1 /*action='show',application='PotinMaster',controller='users'*/[0m
+  ↳ app/views/layouts/application.html.erb:25
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | GC: 0.6ms)
+Completed 200 OK in 35ms (Views: 6.3ms | ActiveRecord: 0.4ms (3 queries, 0 cached) | GC: 0.6ms)
+
+

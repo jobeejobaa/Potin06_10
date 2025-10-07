@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_10_06_140230) do
+ActiveRecord::Schema[8.0].define(version: 2025_10_07_160546) do
   create_table "cities", force: :cascade do |t|
     t.string "city_name"
     t.string "zip_code"
@@ -76,6 +76,7 @@ ActiveRecord::Schema[8.0].define(version: 2025_10_06_140230) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "city_id"
+    t.boolean "active_user", default: false
     t.index ["city_id"], name: "index_users_on_city_id"
   end
 

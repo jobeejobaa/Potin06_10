@@ -22,7 +22,7 @@
                 <a class="nav-link" href="/team">Team</a>
                 <a class="nav-link" href="/contact">Contact</a>
                 <a class="nav-link" href="/gossips/new">Creer un potain</a>
-                <a class="nav-link" href="/users/show">Profil Utilisateur</a>
+                <a class="nav-link" href="/users/<%=User.where(active_user: true).first.id%>">Profil Utilisateur</a>
             </div>
         </nav>
     </header>
