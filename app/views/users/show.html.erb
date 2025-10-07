@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <title>Affiche un utilisateur
+    </title>
+</head>
+    <body>
+    <main>
+        <%if params[:id].scan(/[a-zA-Z]/).size == 0%>
+            <%found_user = User.find(params[:id].to_i)%>
+        <%else%>
+            <%found_user = User.where(first_name: params[:id]).first %>
+        <%end%>
+        <h1><%= "Bienvenue sur ta page profil #{found_user.first_name}" %></h1>
+        <a><%= "Ton nom de famille :  #{found_user.last_name}" %></a><br>
+        <a><%= "Ta ville :  #{found_user.city.city_name}" %></a><br>
+        <a><%= "Ton age :  #{found_user.age}" %></a><br>
+        <a><%= "Ton email :  #{found_user.email}" %></a><br>
+        <a><%= "Date de création de ton compte :  #{found_user.created_at}" %></a><br>
+    </main>
+    </body>
+</html>

@@ -2,47 +2,21 @@
 <html lang="fr">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gossip team</title>
-
-    <!-- Lien Bootstrap CSS -->
-    <link
-    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-    rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-    crossorigin="anonymous">
 </head>
-
-<body class= "text-center">
-    <header>
-        <nav>
-            <div>
-                <a class="nav-link" href="/welcome">Accueil</a>
-                <a class="nav-link" href="/team">Team</a>
-                <a class="nav-link" href="/contact">Contact</a>
-                <a class="nav-link" href="/profil">Profil Utilisateur</a>
-            </div>
-        </nav>
-    </header>
-
+<body>
     <main>
         <h1>Bienvenue sur Gossip THP !</h1>
         <h2>Découvre ici toute la liste des potins déjà rédigés !</h2>
+        <br>
         <div>
             <%for n in Gossip.all do %>
                 <h2><%= n.title%></h2>
                 <%= "#{n.user.first_name} #{n.user.last_name}" %><br>
                 <%= n.content%><br>
-                <a href="/gossip/<%= n.id %>">Voir ce Gossip</a>
+                <%= link_to "Voir ce Gossip", gossip_path(n) %>
             <%end%>
         </div>
     </main>
-
-<!-- Script Bootstrap JS -->
-    <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous">
-    </script>
 </body>
 </html>
