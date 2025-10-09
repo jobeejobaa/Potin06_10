@@ -7,7 +7,6 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
-
 require "faker"
 
 puts " 🧹 Cleaning DB..."
@@ -24,7 +23,7 @@ puts " 🧱 Creating cities..."
 10.times do
   City.create!(
     city_name: Faker::Address.city,
-    zip_code: "#{rand(1000..2000)}#{rand(65..70).chr}"
+    zip_code: "#{rand(1000..9999)}"
   )
 end
 
@@ -34,32 +33,31 @@ puts " 👥 Creating users..."
     first_name: Faker::Name.first_name,
     last_name:  Faker::Name.last_name,
     description: Faker::Fantasy::Tolkien.poem,
-    email: "#{(Faker.name).split.join}@gmail.com",
+    email: "#{Faker::Internet.unique.username}@gmail.com",
     age: rand(12..30),
-    city_id: rand((City.all.first.id)..(City.all.last.id)),
+    city: City.all.sample,
     active_user: false
   )
 end
 
-puts " 🕺 Creating active users..."
+puts " 🕺 Creating active user..."
 User.create!(
-    first_name: Faker::Name.first_name,
-    last_name:  Faker::Name.last_name,
-    description: Faker::Fantasy::Tolkien.poem,
-    email: "#{(Faker.name).split.join}@gmail.com",
-    age: rand(12..30),
-    city_id: rand((City.all.first.id)..(City.all.last.id)),
-    active_user: true
-  )
+  first_name: Faker::Name.first_name,
+  last_name:  Faker::Name.last_name,
+  description: Faker::Fantasy::Tolkien.poem,
+  email: "#{Faker::Internet.unique.username}@gmail.com",
+  age: rand(12..30),
+  city: City.all.sample,
+  active_user: true
+)
 
 puts " 📰 Creating gossips..."
 20.times do
-  city = City.all.sample
   Gossip.create!(
     title: Faker::Book.title.truncate(14),
     content: Faker::Fantasy::Tolkien.poem,
-    user_id: rand((User.all.first.id)..(User.all.last.id)),
-    city: city
+    user: User.all.sample,
+    city: City.all.sample
   )
 end
 
@@ -70,31 +68,30 @@ puts " 🔗 Creating tags..."
   )
 end
 
-puts " ⛓️  Creating comments..."
+puts " ⛓️ Creating comments..."
 20.times do
   Comment.create!(
     content: Faker::Fantasy::Tolkien.poem,
-    user_id: rand((User.all.first.id)..(User.all.last.id)),
-    gossip_id: rand((Gossip.all.first.id)..(Gossip.all.last.id))
+    user: User.all.sample,
+    gossip: Gossip.all.sample
   )
 end
 
-puts " 🫀  Creating likes..."
+puts " 🫀 Creating likes..."
 20.times do
   Like.create!(
-    user_id: rand((User.all.first.id)..(User.all.last.id)),
-    gossip_id: rand((Gossip.all.first.id)..(Gossip.all.last.id))
+    user: User.all.sample,
+    gossip: Gossip.all.sample
   )
 end
 
-puts " ✍️  Creating gossips & tags..."
-10.times do 
+puts " ✍️ Creating gossip_tags..."
+10.times do
   GossipTag.create!(
-    gossip_id: rand((Gossip.all.first.id)..(Gossip.all.last.id)),
-    tag_id: rand((Tag.all.first.id)..(Tag.all.last.id))
+    gossip: Gossip.all.sample,
+    tag: Tag.all.sample
   )
 end
 
-puts " ✅ Done !"
-puts "Users: #{User.count} | Cities: #{City.count} | Gossips: #{Gossip.count} | Tags: #{Tag.count} | Comments: #{Comment.count} | Likes: #{Like.count} | Gossips & Tags: #{GossipTag.count}"
-
+puts " ✅ Done!"
+puts "Users: #{User.count} | Cities: #{City.count} | Gossips: #{Gossip.count} | Tags: #{Tag.count} | Comments: #{Comment.count} | Likes: #{Like.count} | GossipTags: #{GossipTag.count}"
