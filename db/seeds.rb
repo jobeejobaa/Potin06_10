@@ -54,10 +54,12 @@ User.create!(
 
 puts " 📰 Creating gossips..."
 20.times do
+  city = City.all.sample
   Gossip.create!(
-    title: Faker::Book.title,
+    title: Faker::Book.title.truncate(14),
     content: Faker::Fantasy::Tolkien.poem,
-    user_id: rand((User.all.first.id)..(User.all.last.id))
+    user_id: rand((User.all.first.id)..(User.all.last.id)),
+    city: city
   )
 end
 

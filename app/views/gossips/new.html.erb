@@ -6,20 +6,27 @@
 </head>
     <body>
         <main>
+            <% if @gossip.errors.any? %>
+                    <p>Nous n'avons pas réussi à créer le potin :</p>
+                        <ul>
+                            <% @gossip.errors.full_messages.each do |message| %>
+                            <li><%= message %></li>
+                            <% end %>
+                        </ul>
+                <% end %>
             <form action= <%= gossips_path %> method="POST">
                 <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
                 <p>Entre ton titre de potin ci-dessous :</p>
-                <input type="text" name="gossip_text">
+                <input type="text" name="title">
                 <br>
                 <br>
                 <form action= <%= gossips_path %> method="POST">
-                <input type="hidden" name="authenticity_token" value=<%= form_authenticity_token %> >
                 <p>Entre ton potin ci-dessous :</p>
-                <input type="text" name="gossip_text">
-                </form>
+                <input type="text" name="content">
                 <br>
                 <br>
                 <input type="submit" value="Valider">
+            </form>
         </main>
     </body>
 </html>

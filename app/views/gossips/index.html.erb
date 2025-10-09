@@ -1,0 +1,5 @@
+<h1>Liste des potins</h1>
+
+<% @gossips.each do |gossip| %>
+  <p><strong><%= gossip.title %></strong> - <%= gossip.content %></p>
+<% end %>
